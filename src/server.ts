@@ -1,5 +1,7 @@
-import express from 'express'
 import 'reflect-metadata'
+import express from 'express'
+import './database' //importa o arquivo index.ts por padrão
+
 const app = express()
 
 app.get('/', (request, response) => {
