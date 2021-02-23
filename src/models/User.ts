@@ -18,5 +18,7 @@ class User{
     constructor(){
         if(!this.id){
             this.id =  uuid() //Caso o id não exista, então ele vai ter o valor de uuid
-
+        }
+    }
+}
 export {User}
