@@ -1,6 +1,5 @@
-import {Request, Response} from 'express'
-import {getCustomRepository, getRepository} from 'typeorm';
-import {User} from '../models/User'
+import { Request, Response } from 'express';
+import { getCustomRepository } from 'typeorm';
 import { UsersRepository } from '../repositories/UsersRepository';
 class UserController{
     async create(request: Request, response: Response){
@@ -23,4 +22,4 @@ class UserController{
     }
 }
 
-export{UserController}
+export { UserController };
