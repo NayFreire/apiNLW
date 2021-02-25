@@ -18,7 +18,7 @@ class UserController{
 
         await usersRepository.save(user) //Salva o usuário no banco de dados
 
-        return response.json(user)
+        return response.status(201).json(user)
     }
 }
 
